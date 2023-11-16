@@ -2,7 +2,7 @@ import { View, Text } from 'react-native'
 import React from 'react'
 import globalStyles from '../../styles/styles'
 import { ProgressBar, TextInput } from "react-native-paper";
-import { FontAwesome5, FontAwesome, Ionicons } from "@expo/vector-icons";
+import Icon from "react-native-vector-icons/FontAwesome";
 
 const Players = () => {
   return (
@@ -14,7 +14,7 @@ const Players = () => {
         >
           <View style={[globalStyles.jcRSpaceBetween]}>
             <View style={[globalStyles.jcRCenter]}>
-              <FontAwesome name={"user"} size={12} color="#727682" />
+              <Icon name={"user"} size={12} color="#727682" />
               <Text
                 style={[
                   globalStyles.colorGrey,
@@ -29,7 +29,7 @@ const Players = () => {
               </Text>
             </View>
             <View style={[globalStyles.jcRCenter]}>
-              <FontAwesome name={"area-chart"} size={12} color="#727682" />
+              <Icon name={"area-chart"} size={12} color="#727682" />
               <Text
                 style={[
                   globalStyles.colorGrey,

@@ -20,7 +20,7 @@ const Price = () => {
             >
               PRIZE POOL
             </Text>
-            <Text style={[globalStyles.f14, globalStyles.fw600]}>$12,000</Text>
+            <Text style={[globalStyles.f14, globalStyles.fw600,globalStyles.colorBlack,]}>$12,000</Text>
           </View>
           <View>
             <Text
@@ -32,7 +32,7 @@ const Price = () => {
             >
               UNDER
             </Text>
-            <Text style={[globalStyles.f14, globalStyles.fw600]}>3.25x</Text>
+            <Text style={[globalStyles.f14, globalStyles.fw600,globalStyles.colorBlack]}>3.25x</Text>
           </View>
           <View>
             <Text
@@ -44,7 +44,7 @@ const Price = () => {
             >
               OVER
             </Text>
-            <Text style={[globalStyles.f14, globalStyles.fw600]}>1.25x</Text>
+            <Text style={[globalStyles.f14, globalStyles.fw600,globalStyles.colorBlack]}>1.25x</Text>
           </View>
           <View>
             <Text
@@ -60,7 +60,7 @@ const Price = () => {
               <Text
                 style={[
                   globalStyles.f14,
-                  globalStyles.fw600,
+                  globalStyles.fw600,,globalStyles.colorBlack,
                   { paddingRight: 8 },
                 ]}
               >

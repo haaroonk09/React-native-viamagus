@@ -1,7 +1,7 @@
 import { Platform, StyleSheet, Text, View } from "react-native";
 import React from "react";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
-import { Ionicons } from "@expo/vector-icons";
+import Icon from "react-native-vector-icons/Ionicons";
 import Home from "../screens/Home";
 import Leagues from "../screens/NavScreens/Leagues";
 import Research from "../screens/NavScreens/Research";
@@ -27,7 +27,7 @@ const BottomNavigator = () => {
                     } else if (route.name === "Profile") {
                         iconName = focused ? "person" : "person-outline";
                     }
-                    return <Ionicons name={iconName} size={24} color={color} />;
+                    return <Icon name={iconName} size={24} color={color} />;
                 },
                 tabBarActiveTintColor: "#6231AD",
                 tabBarInactiveTintColor: "#B5C0C8",
@@ -74,7 +74,7 @@ const BottomNavigator = () => {
 BottomNavigator.navigationOptions = (props: any) => ({
     headerTitle: "Events",
     drawerIcon: (prop: any) => {
-        return <Ionicons name="calendar-outline" size={18} color={prop.color} />
+        return <Icon name="calendar-outline" size={18} color={prop.color} />
     }
 });
 

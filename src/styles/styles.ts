@@ -35,13 +35,13 @@ const globalStyles = StyleSheet.create({
     fontSize: 24,
   },
   fw500: {
-    fontWeight: "500",
+    fontFamily:"Montserrat-Medium"
   },
   fw600: {
-    fontWeight: "600",
+    fontFamily:"Montserrat-SemiBold"
   },
   fw700: {
-    fontWeight: "500",
+    fontFamily:"Montserrat-Bold"
   },
   colorWhite: {
     color: "#fff",

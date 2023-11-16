@@ -1,10 +1,10 @@
 import { StyleSheet, Text, TouchableHighlight, View } from 'react-native'
 import React from 'react'
 import globalStyles from '../../styles/styles'
-import { FontAwesome5, FontAwesome, Ionicons } from "@expo/vector-icons";
+import Icon from "react-native-vector-icons/FontAwesome5";
 import useModal from '../../hooks/useModal';
 
-const Prediction = ({toggleModal}) => {
+const Prediction = ({toggleModal}:any) => {
   return (
     <View style={{ paddingHorizontal: 16 }}>
     <Text
@@ -12,6 +12,7 @@ const Prediction = ({toggleModal}) => {
         globalStyles.colorGrey,
         globalStyles.f14,
         globalStyles.fw500,
+        
       ]}
     >
       What’s your prediction?
@@ -26,7 +27,7 @@ const Prediction = ({toggleModal}) => {
         <View
           style={[globalStyles.backgroundDarkBlue, styles.memberButton]}
         >
-          <FontAwesome5 name={"arrow-down"} size={12} color="#fff" />
+          <Icon name={"arrow-down"} size={12} color="#fff" />
           <Text
             style={[
               globalStyles.colorWhite,
@@ -48,7 +49,7 @@ const Prediction = ({toggleModal}) => {
         <View
           style={[globalStyles.backgroundLightBlue, styles.memberButton]}
         >
-          <FontAwesome5 name={"arrow-up"} size={12} color="#fff" />
+          <Icon name={"arrow-up"} size={12} color="#fff" />
           <Text
             style={[
               globalStyles.colorWhite,

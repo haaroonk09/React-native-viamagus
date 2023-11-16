@@ -3,10 +3,10 @@ import React from 'react'
 import globalStyles from '../../styles/styles'
 import { TouchableHighlight } from 'react-native'
 import { Avatar, Badge } from "react-native-elements";
-import { FontAwesome5 } from "@expo/vector-icons";
+import Icon from "react-native-vector-icons/FontAwesome5";
+import FontAwesome from "react-native-vector-icons/FontAwesome";
 
-
-const Profile = ({navigation}) => {
+const Profile = ({navigation}:any) => {
     
   return (
     <View style={{ paddingHorizontal: 15 }}>
@@ -17,7 +17,7 @@ const Profile = ({navigation}) => {
               source={require("../../../assets/images/logo.png")}
               onPress={() => navigation.navigate("Today's Games")}
             />
-            <Text style={[globalStyles.f14]}>Profile</Text>
+            <Text style={[globalStyles.f14,globalStyles.colorBlack,globalStyles.fw500]}>Profile</Text>
             <View>
               <Avatar
                 rounded
@@ -28,6 +28,7 @@ const Profile = ({navigation}) => {
                 status="primary"
                 value={1}
                 containerStyle={{ position: "absolute", bottom: 15, left: 13 }}
+
               />
             </View>
           </View>
@@ -38,23 +39,21 @@ const Profile = ({navigation}) => {
                 size="large"
                 source={require("../../../assets/images/woman.png")}
               />
-              <Badge
-                status="primary"
-                value={1}
-                containerStyle={{
+              <View
+               style={{
                   position: "absolute",
-                  bottom: 10,
-                  left: "56%",
+                  bottom: 0,
+                  right: "40%",backgroundColor:"#fff",padding:5,borderRadius:50
                 }}
-              />
+              ><Icon name="edit" size={14} color="#727682" /></View>
             </View>
           </View>
           <View style={[globalStyles.jcCCenter]}>
             <Text
               style={[
                 globalStyles.fw500,
-                globalStyles.f14,
-                { paddingTop: 12, paddingBottom: 8 },
+                globalStyles.f14,globalStyles.colorBlack,
+                { paddingTop: 12, paddingBottom: 8},
               ]}
             >
               Jina Simons
@@ -84,7 +83,7 @@ const Profile = ({navigation}) => {
           </View>
           <TouchableHighlight>
           <View style={[globalStyles.jcRCenter, { paddingTop: 20 }]}>
-            <FontAwesome5 name="sign-out-alt" size={18} color="#727682" />
+            <Icon name="sign-out-alt" size={18} color="#727682" />
             <Text
               style={[
                 globalStyles.fw500,

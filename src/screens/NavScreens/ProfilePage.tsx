@@ -5,7 +5,7 @@ import globalStyles from '../../styles/styles'
 const ProfilePage = () => {
   return (
     <View style={[globalStyles.full,globalStyles.backgroundWhite,{alignItems:"center",justifyContent:"center"}]}>
-      <Text style={globalStyles.f24}>Profile</Text>
+      <Text style={[globalStyles.f24,globalStyles.colorBlack]}>Profile</Text>
     </View>
   )
 }

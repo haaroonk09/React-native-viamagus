@@ -5,7 +5,7 @@ import globalStyles from '../../styles/styles'
 const Leagues = () => {
   return (
     <View style={[globalStyles.full,globalStyles.backgroundWhite,{alignItems:"center",justifyContent:"center"}]}>
-      <Text style={globalStyles.f24}>Leagues</Text>
+      <Text style={[globalStyles.f24,globalStyles.colorBlack]}>Leagues</Text>
     </View>
   )
 }

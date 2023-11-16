@@ -2,7 +2,7 @@ import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 import globalStyles from '../../styles/styles'
 import { ImageBackground } from 'react-native'
-import { MaterialCommunityIcons } from "@expo/vector-icons";
+import Icon from "react-native-vector-icons/MaterialCommunityIcons";
 
 const Timer = () => {
   return (
@@ -38,7 +38,7 @@ const Timer = () => {
                 >
                   Starting in
                 </Text>
-                <MaterialCommunityIcons
+                <Icon
                   name="clock"
                   size={14}
                   color="#D2BAF5"

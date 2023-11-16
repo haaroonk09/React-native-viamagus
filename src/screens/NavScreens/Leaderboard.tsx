@@ -4,8 +4,8 @@ import globalStyles from '../../styles/styles'
 
 const Leaderboard = () => {
   return (
-    <View style={[globalStyles.full,globalStyles.backgroundWhite,{alignItems:"center",justifyContent:"center"}]}>
-      <Text style={globalStyles.f24}>Leaderboard</Text>
+    <View style={[globalStyles.full,globalStyles.backgroundWhite,,{alignItems:"center",justifyContent:"center"}]}>
+      <Text style={[globalStyles.f24,globalStyles.colorBlack]}>Leaderboard</Text>
     </View>
   )
 }

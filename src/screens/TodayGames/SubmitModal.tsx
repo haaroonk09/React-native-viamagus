@@ -24,7 +24,7 @@ const Item = ({ title }: any) => {
     );
   };
 
-const SubmitModal = ({isModalVisible,toggleModal}) => {
+const SubmitModal = ({isModalVisible,toggleModal}:any) => {
   const causes = [
 ]
 for (let i = 0; i < 20; i++) {
@@ -51,7 +51,7 @@ for (let i = 0; i < 20; i++) {
               }}
             >
               <View>
-                <Text style={[globalStyles.f16, globalStyles.fw500,{paddingBottom:28}]}>
+                <Text style={[globalStyles.f16,globalStyles.colorBlack,globalStyles.fw500,{paddingBottom:28}]}>
                   Your Prediction is Under
                 </Text>
               </View>
@@ -120,16 +120,19 @@ for (let i = 0; i < 20; i++) {
                     >
                       Total
                     </Text>
+                    <View style={{paddingHorizontal:8}}>
+                    <Image source={require("../../../assets/images/yellow.png")} />
+                    </View>
                     <Text
                       style={[
                         globalStyles.f14,
-                        globalStyles.fw600,
-                        { paddingHorizontal: 8 },
+                        globalStyles.fw600,globalStyles.colorBlack,
+                        
                       ]}
                     >
                       5
                     </Text>
-                    <Image source={require("../../../assets/images/yellow.png")} />
+                    
                   </View>
                 </View>
               </View>
@@ -182,19 +185,20 @@ const styles = StyleSheet.create({
     },
     title: {
       fontSize: 24,
-      fontWeight:"600",
-      textAlign:"center"
-  
+      textAlign:"center",
+      fontFamily:"Montserrat-SemiBold",
+      color:"black",
     },
     pressedTitle:{
       fontSize: 24,
-      fontWeight:"600",
+      fontFamily:"Montserrat-SemiBold",
       color:"black",
-      textAlign:"center"
+      textAlign:"center",
     },
     selectBox: {
       backgroundColor: "#fff",
       height: "50%",
+      color:"#000"
     },
     pressed: {
       backgroundColor: '#6231ad0f',

@@ -76,7 +76,7 @@ const Tabs = () => {
                 globalStyles.f14,
                 globalStyles.fw500,
                 { textAlign: "center" },
-                activeButton === "GamesPlayed" ? { color: "#6231AD" } : null,
+                activeButton === "GamesPlayed" ? { color: "#6231AD" } : { color: "#727682" },
               ]}
             >
               Games Played
@@ -98,7 +98,7 @@ const Tabs = () => {
                 globalStyles.f14,
                 globalStyles.fw500,
                 { textAlign: "center" },
-                activeButton === "Badges" ? { color: "#6231AD" } : null,
+                activeButton === "Badges" ? { color: "#6231AD" } : { color: "#727682" },
               ]}
             >
               Badges
@@ -134,6 +134,7 @@ const Tabs = () => {
                     style={[
                       globalStyles.fw600,
                       globalStyles.f14,
+                      globalStyles.colorBlack,
                       { paddingBottom: 10 },
                     ]}
                   >
